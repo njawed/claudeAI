@@ -1,0 +1,15 @@
+<apex:page standardController="Search__c" extensions="Search" showHeader="false" >
+<apex:form >
+
+<apex:image url="{!$Resource.Mercedes_C_Class}" width="100" height="100"/>
+<STYLE TYPE="text/css">
+
+p { background-color: #2B60DE; }
+</STYLE>
+<center><p>Mercedes C Class</p></center>
+<table  broder="1">
+<tr><td>Mercedes aerodynamics:{Mercedes__c.Aerodynamics__c}</td> </tr>
+</table>
+
+</apex:form>
+</apex:page>

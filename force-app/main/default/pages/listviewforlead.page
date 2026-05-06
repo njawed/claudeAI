@@ -1,0 +1,30 @@
+<apex:page standardController="Lead" recordSetvar="Lead">
+<apex:pageBlock title="Viewing Leads">
+<apex:form id="theForm">
+    <apex:panelGrid columns="2">
+        <apex:outputLabel value="View:"/>
+        <apex:selectList value="{!filterId}" size="1">
+        <apex:actionSupport event="onchange" rerender="list"/>
+        <apex:selectOptions value="{!listviewoptions}"/>
+        </apex:selectList>
+    </apex:panelGrid>
+    <!-- Page block section to list the data, pls add more fields that you require in view -->
+    
+        <apex:dataTable var="l" value="{!Lead}" id="list">
+        border="1">
+            <apex:column >
+            <apex:facet name="header">Name</apex:facet>
+            <apex:commandLink >
+            {!l.LastName}
+            <apex:param name="cid" value="{!l.id}"/>
+            </apex:commandLink>
+            </apex:column>
+            <apex:column >
+            <apex:facet name="header">Phone</apex:facet>
+            {!l.Phone}
+            </apex:column>
+        </apex:dataTable>
+    
+</apex:form>
+</apex:pageBlock>
+</apex:page>

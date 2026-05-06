@@ -1,0 +1,10 @@
+smsUrlArg: http://india.msg91.com/sendhttp.php
+userNameArg: ?user=rixyncs
+passwordArg: &password=nasir123
+senderIdArg: &sender=RixInc
+toArg: &mobiles=
+msgArg: &message=
+suffixArg: 
+
+
+

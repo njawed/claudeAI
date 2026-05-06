@@ -1,0 +1,42 @@
+<apex:page standardController="Search__c" extensions="Search">
+  <STYLE TYPE="text/css">
+td{font-family: times new roman; font-size: 8pt;}
+
+.boldtable, .boldtable TD, .boldtable TH
+{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:20pt;
+color:#0000A0;
+background-color:white;
+}
+p{color:#58ACFA;}
+a{color:#58ACFA;}
+body{
+    background-repeat: repeat;
+    background-attachment:fixed;
+    background-position: bottom left; 
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size:10px;
+    }
+    h2 { color : #0000A0; font-style : italics; }
+h3 { color : #0000A0; font-style : italics; }
+h4 { color : #0000A0; font-style : italics; }
+
+
+
+</STYLE>
+
+<apex:form >
+<apex:pageBlock >
+<apex:pageBlock title="Enter Details Please"/> 
+
+<apex:commandButton value="Search" action="SearchForCars"/><br/>
+<br/>
+<h2><a>Car you like</a></h2>: <apex:inputField value="{!Search__c.Car_you_like__c}"/>
+
+
+
+</apex:pageBlock>
+
+</apex:form>
+</apex:page>

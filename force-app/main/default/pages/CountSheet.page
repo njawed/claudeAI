@@ -1,0 +1,1 @@
+<apex:page standardStylesheets="false" showHeader="false" sidebar="false"standardController="merchandise__c" recordSetVar="products"/>
